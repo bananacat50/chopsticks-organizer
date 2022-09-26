@@ -29,7 +29,7 @@ public class Game {
    * @return which player number won the game
    */
    public int play(boolean print) {
-      if (firstTime = true) {
+      if (firstTime == true) {
          firstTime = false;
          System.out.println("print instructions? (y/n)");
          Scanner s = new Scanner(System.in);
