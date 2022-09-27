@@ -29,8 +29,14 @@ public class Game {
    * @return which player number won the game
    */
    public int play(boolean print) {
-      if (firstTime == true) {
+      if (firstTime && print) {
          firstTime = false;
+         if (p1 instanceof HumanPlayer) {
+            System.out.println("Player 1 is a human player");
+         }
+         if (p2 instanceof HumanPlayer) {
+            System.out.println("Player 2 is a human player");
+         }
          System.out.println("print instructions? (y/n)");
          Scanner s = new Scanner(System.in);
          if (s.next().equals("y")) {
