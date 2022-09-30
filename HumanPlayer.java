@@ -2,15 +2,15 @@
 // 6/17
 // CSE 142
 // Ms Myers
-// a class that represents human players, who choose their own moves.
-
+// This class represents human players, who choose their own moves.
 import java.util.*;
 
 public class HumanPlayer extends Player {
    Scanner s;
    
    /**
-   * constructs a human player, with a scanner for the player's moves to be inputted in
+   * constructs a human player, with a scanner for the player's moves to be 
+   * inputted in via text
    */
    public HumanPlayer() {
       super();
@@ -18,9 +18,11 @@ public class HumanPlayer extends Player {
    }
    
    /**
-   * asks the player to choose a move with a few questions, then executes the move
+   * asks the player to choose a move with a few questions, then executes the 
+   * move
    * @param Opponent - the player to make the moves against
-   * @param print - does nothing, put here so that it can be called in the same way as AiPlayer's makeMove
+   * @param print -  does nothing, put here so that it can be called in the same 
+   *                 way as AiPlayer's makeMove
    * @return whether the move was valid
    */
    public boolean makeMove(Player Opponent, boolean print) {

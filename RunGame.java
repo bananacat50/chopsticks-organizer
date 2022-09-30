@@ -3,17 +3,20 @@
 // CSE 142
 // Ms Myers
 // Chopsticks Optimiser
-// loads an existing AI, plays it for a lot of games, then saves it, and then plays it against the user.
+// Loads an existing AI, plays it for a lot of games, saves it, and then plays 
+// it against the user.
 
 import java.io.*;
 
 public class RunGame {
    /**
-   * loads an Ai from a file, plays it against another Ai for 100 games 100 times or until one wins more than 3/4
-      after 50 games have been played, then saves it and plays it against the user.
+   * Loads an Ai from a file, plays it against another Ai for 100 games 100 
+   * times (or until one wins more than 75% of games after 50 games have been 
+   * played), then saves it and plays it against the user.
    */
    public static void main(String[] args) {
-      Game g = new Game(new AiPlayer("chosen", "filename"), new AiPlayer("chosen"));
+      Game g = new Game(new AiPlayer("chosen", "filename"), 
+            new AiPlayer("chosen"));
       int s = 0;
       int numGames = 100;
       int numloops = 0;

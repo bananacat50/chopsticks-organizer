@@ -2,7 +2,8 @@
 // 6/17
 // CSE 142
 // Ms Myers
-// a generic player class that is put into games, a parent class for ai and human players
+// A generic player class that is put into games, a parent class for ai and 
+// human players
 
 import java.util.*;
 import java.io.*;
@@ -24,7 +25,8 @@ public class Player {
    }
    
    /**
-   * a placeholder method so that the human and ai players can make moves when defined more generally. throws an error when called
+   * Placeholder method so that the human and ai players can make moves when 
+   * defined more generally. Throws error when called.
    * @param opponent - does nothing
    * @param print - does nothing
    * @return would return whether the move was valid if it was ever reached
@@ -55,7 +57,8 @@ public class Player {
    
    
    /**
-   * a placeholder for AiPlayers to save to files (saves an empty file if called elsewhere)
+   * Placeholder for AiPlayers to save to files (saves an empty file if 
+   * called elsewhere)
    * @param name - what would be the name of the file if this was ever called
    */
    public void save(String name) {
